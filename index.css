@@ -17,7 +17,7 @@ html body{
     box-shadow: 0px 0px 10px .1px;
     background-color: white;
     /* position: fixed; */
-    /* z-index: 54541; */
+    
 }
 .navbar span
 {
@@ -301,6 +301,7 @@ html body{
     justify-content: center;
     align-items: center;
     margin-top: 0px;
+    position: relative;
 }
 .services .header h1
 {
@@ -364,10 +365,10 @@ html body{
     width: 15px;
     color: red;
     position: absolute;
-    top: 0;
+    /* top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0; */
     z-index: 1;
     content: "";
 }
@@ -715,11 +716,12 @@ html body{
     display: flex;
     height: 25%;
     width: 100%;
-    bottom:-25%;
+    bottom:0px;
     background-color: rgba(255, 255, 255, 0.708);
     color: black;
     opacity: 0;
-    transition: all .5s;
+    transition: height 5s 0.2s;
+    transform: translate();
     overflow: hidden;
     
     
@@ -755,7 +757,7 @@ html body{
     opacity: 1;
     cursor: pointer;
     bottom: 0;
-    transition: all .5s;
+    transition: height 5s 0.2s;
     overflow: hidden;
 }
 
@@ -860,15 +862,16 @@ html body{
 }
 .pricing .details .details2 .icon1::before
 {
-    position: absolute;
+   
     content: "";
+    position: absolute;
+    display: block;
     height: 86px;
     width: 86px;
     border-radius: 100%;
-    /* background: rgb(228, 23, 23); */
-    transition: all 0.3s ease-out 0s;
-    transform: translate(1.1px);
-    z-index: -6652;
+    color: #dc3546b5;
+    /* transform: translate(1.1px); */
+    
 }
 .pricing .details .details2 .icon1
 {
@@ -876,7 +879,7 @@ html body{
     color: white;
 
 }
-.pricing .details .details2 p sup,span
+.pricing .details .details2 p sup
 {
     font-size: 48px;
     color: #dc3545;
